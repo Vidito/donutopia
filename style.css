@@ -353,16 +353,20 @@ input[type="submit"]:active {
   .about-text {
     text-align: justify;
     margin-top: 30px;
-    width: 400px;
+    width: 300px;
   }
   .advantages {
     width: 80%;
+    margin-left: 72px;
   }
   #login-box {
-    margin-left: 80px;
+    margin-left: 72px;
     width: 80%;
   }
   .footer ul {
-    padding-left: 10px;
+    padding-left: 0px;
+  }
+  .footer ul li {
+    margin: 10px;
   }
 }
