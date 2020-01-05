@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* smooth scrolling, although it doesn't work in all browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 19px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#home {
+  width: 100%;
+  height: 540px;
+  background: url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 540px;
+  top: 0;
+}
+
+.nav {
+  background: #333;
+  overflow: auto;
+}
+.nav a {
+  color: white;
+}
+.nav h1 {
+  float: left;
+  padding-top: 20px;
+}
+.nav ul {
+  list-style: none;
+  float: right;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.nav ul li a:hover {
+  background: #80898b;
+  color: #f8d5eb;
+}
+.logo {
+  float: left;
+  width: 22%;
+  padding: 0 120px;
+  margin-top: 14px;
+  z-index: 2;
+}
+.logo-img {
+  width: 60px;
+  margin-top: 11px;
+}
+
+.heading {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.heading p {
+  color: #fff;
+  font-size: 24px;
+}
+.vertical-photo {
+  left: 9%;
+  top: 34%;
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+}
+.donut {
+  border-radius: 270px 0 0 270px;
+}
+
+.D {
+  color: #f8d5eb;
+  font-size: 100px;
+  background: #96e8f4;
+}
+.description {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: justify;
+  width: 35%;
+  position: relative;
+  left: 50%;
+  font-size: 20px;
+  background-color: #f1f1f6;
+}
+
+.card-area {
+  margin-top: 80px;
+  overflow: hidden;
+  padding: 5px 15px 20px;
+  background: #96e8f4;
+  color: #f4f4f4;
+}
+
+.card-area h1 {
+  padding-left: 46%;
+  padding-top: 5%;
+}
+.cards {
+  margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  text-align: center;
+  color: black;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+}
+
+.card h2 {
+  padding-bottom: 20px;
+}
+.card p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.8s ease;
+}
+/* about */
+.container-1 {
+  max-width: 960px;
+  margin-left: 220px;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+.grid-1,
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+
+  grid-template-columns: 1fr 1fr;
+}
+.center {
+  text-align: center;
+  margin: auto;
+}
+.about-background {
+  background: #f3f3f3;
+  color: #333;
+}
+.about-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Sign Up Section*/
+
+.advantages {
+  font-size: 20px;
+  text-align: left;
+  margin: 33px auto 33px 80px;
+  padding: 20px;
+  background-image: url(https://images.unsplash.com/photo-1570081381618-55441fb3549c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+  border-radius: 8px;
+  background-size: contain;
+}
+.advantages ul {
+  padding-left: 50px;
+}
+.advantages p {
+  padding-left: 30px;
+}
+.advantages li {
+  margin: 5px 0;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  padding-bottom: 25px;
+  width: 450px;
+  height: 400px;
+  background: #96e8f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#login-box h1 {
+  padding-top: 20px;
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 26%;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  width: 160px;
+  height: 42px;
+  background: #f7beff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.1s ease;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.footer ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 35%;
+  font-size: 20px;
+  background-color: #f1f1f6;
+}
+.footer ul li {
+  display: inline-block;
+  margin: 20px;
+  align-items: center;
+}
+
+.footer ul li a {
+  text-decoration: none;
+
+  font-size: 20px;
+  padding: 0 20px;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    text-align: center;
+  }
+  .heading {
+    margin-top: 50px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    display: block;
+    margin-left: -60px;
+  }
+  .about-text {
+    text-align: left;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .vertical-photo {
+    display: none;
+  }
+
+  .description {
+    margin-top: 50px;
+    left: 0;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    background-color: #f1f1f6;
+  }
+  .description h2 {
+    text-align: center;
+  }
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+  }
+  .center {
+    display: none;
+  }
+  .container-1 {
+    margin-left: 4%;
+  }
+  .about-text {
+    text-align: justify;
+    margin-top: 30px;
+    width: 400px;
+  }
+  .advantages {
+    width: 80%;
+  }
+  #login-box {
+    margin-left: 80px;
+    width: 80%;
+  }
+  .footer ul {
+    padding-left: 10px;
+  }
+}
