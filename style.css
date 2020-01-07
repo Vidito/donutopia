@@ -303,15 +303,17 @@ input[type="submit"]:active {
   .logo-container {
     padding: 0 10px;
   }
-
+  .logo-container .donut {
+    display:none;
+  }
   .heading {
     margin-top: 15px;
   }
   .heading h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .heading p {
-    font-size: 23px;
+    display:none;
   }
   .cards {
     grid-template-columns: 1fr;
@@ -324,9 +326,6 @@ input[type="submit"]:active {
     text-align: left;
     margin-top: 30px;
     width: 100%;
-  }
-  .vertical-photo {
-    display: none;
   }
 
   .description {
