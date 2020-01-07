@@ -38,8 +38,9 @@ p {
 .nav {
   background: #46b3e6;
   overflow: auto;
-
-  z-index: 2;
+  position:fixed;
+  width:100%;
+  z-index: 1;
 }
 .nav a {
   color: white;
