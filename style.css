@@ -5,6 +5,7 @@
 }
 
 /* smooth scrolling, although it doesn't work in all browsers */
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +13,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #696969;
+  /* background image taken from google, Labeled for reuse*/
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavlP_-HDfm5LkJluzy4WQa56kS2OuUAZ1QOhlux3iq3imYQZv&s);
   background-size: cover;
 }
@@ -32,15 +34,15 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 540px;
-  background-attachment:fixed;
+  background-attachment: fixed;
   top: 0;
 }
 
 .nav {
   background: #46b3e6;
   overflow: auto;
-  position:fixed;
-  width:100%;
+  position: fixed;
+  width: 100%;
   z-index: 1;
 }
 .nav a {
@@ -78,9 +80,8 @@ p {
 }
 .heading {
   position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 170px;
+  left: 40%;
   text-align: center;
 }
 .heading h1 {
@@ -94,10 +95,8 @@ p {
 }
 
 .donut {
-  border-radius: 270px 0 0 270px;
   width: 70px;
   height: 60px;
-  transform: rotate(180deg);
 }
 
 .description {
@@ -117,7 +116,7 @@ p {
   margin-top: 100px;
 }
 
-.testimonials {
+.recipe-area {
   margin: 100px auto 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -140,13 +139,12 @@ p {
   transition: 0.8s ease;
   cursor: pointer;
 }
-.testimonials .cards {
+.recipe-area .cards {
   position: relative;
   width: 350px;
   margin: 0 auto;
   background: #96e8f4;
   padding: 40px;
-  box-sizing: border-box;
   text-align: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -173,7 +171,7 @@ p {
 
   grid-template-columns: 1fr 1fr;
 }
-.center {
+.fontawesome {
   text-align: center;
   margin: auto;
 }
@@ -214,6 +212,8 @@ p {
   margin: 5px 0;
 }
 
+/* Sign up form */
+
 #login-box {
   position: relative;
   margin: 5% auto;
@@ -227,7 +227,7 @@ p {
 }
 
 #login-box h1 {
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
@@ -305,23 +305,22 @@ input[type="submit"]:active {
     padding: 0 10px;
   }
   .logo-container .donut {
-    display:none;
+    display: none;
   }
   .heading {
-    top:150;
-   left:40%; 
+    top: 150;
+    left: 40%;
   }
   .heading h1 {
     font-size: 30px;
-    
   }
   .heading p {
-    display:none;
+    display: none;
   }
   .nav ul li {
-    padding-right:10px;
+    padding-right: 10px;
   }
-  
+
   .cards {
     grid-template-columns: 1fr;
   }
@@ -354,7 +353,7 @@ input[type="submit"]:active {
     height: 100%;
     border-radius: 50px;
   }
-  .center {
+  .fontawesome {
     display: none;
   }
   .container-1 {
