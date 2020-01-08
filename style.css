@@ -308,8 +308,8 @@ input[type="submit"]:active {
     display: none;
   }
   .heading {
-    top: 150;
-    left: 40%;
+    top: 100;
+    left: 30%;
   }
   .heading h1 {
     font-size: 30px;
