@@ -13,8 +13,8 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #696969;
-  /* background image taken from google, Labeled for reuse*/
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavlP_-HDfm5LkJluzy4WQa56kS2OuUAZ1QOhlux3iq3imYQZv&s);
+
+  background-image: url(https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&auto=format&fit=crop&w=508&q=80);
   background-size: cover;
 }
 h1,
